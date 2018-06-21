@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment version="101304" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14269.12"/>
-        <plugIn identifier="com.apple.WebKitIBPlugin" version="14269.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="14113"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -726,7 +728,7 @@
         <window title="Finger" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="890" height="567"/>
+            <rect key="contentRect" x="335" y="390" width="1373" height="567"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1200"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="1373" height="567"/>
@@ -750,7 +752,7 @@
                                             <tableViewGridLines key="gridStyleMask" dashed="YES"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="168" minWidth="40" maxWidth="1000" id="Dc5-1p-naO">
+                                                <tableColumn identifier="" width="168" minWidth="40" maxWidth="1000" id="Dc5-1p-naO">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -813,7 +815,7 @@
                                 </constraints>
                                 <edgeInsets key="contentInsets" left="0.0" right="0.0" top="25" bottom="0.0"/>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="vJn-wx-UQf">
-                                    <rect key="frame" x="1" y="550" width="131" height="16"/>
+                                    <rect key="frame" x="0.0" y="551" width="100" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="pNJ-yB-urw">
@@ -854,7 +856,7 @@
                                                                                 <tableViewGridLines key="gridStyleMask" horizontal="YES"/>
                                                                                 <color key="gridColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
                                                                                 <tableColumns>
-                                                                                    <tableColumn width="108" minWidth="40" maxWidth="1000" id="TtW-2N-Cf1">
+                                                                                    <tableColumn identifier="" width="108" minWidth="40" maxWidth="1000" id="TtW-2N-Cf1">
                                                                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Updated">
                                                                                             <font key="font" metaFont="smallSystem"/>
                                                                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -877,7 +879,7 @@
                                                                                             <binding destination="EYB-7A-auC" name="value" keyPath="arrangedObjects.updated" id="C0g-Nh-EHq"/>
                                                                                         </connections>
                                                                                     </tableColumn>
-                                                                                    <tableColumn width="51" minWidth="40" maxWidth="1000" id="fqG-Ek-7Bb">
+                                                                                    <tableColumn identifier="" width="51" minWidth="40" maxWidth="1000" id="fqG-Ek-7Bb">
                                                                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Commits">
                                                                                             <font key="font" metaFont="smallSystem"/>
                                                                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -899,7 +901,7 @@
                                                                                             </binding>
                                                                                         </connections>
                                                                                     </tableColumn>
-                                                                                    <tableColumn width="60" minWidth="40" maxWidth="1000" id="AVp-Su-8GK">
+                                                                                    <tableColumn identifier="" width="60" minWidth="40" maxWidth="1000" id="AVp-Su-8GK">
                                                                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Comments">
                                                                                             <font key="font" metaFont="smallSystem"/>
                                                                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -921,7 +923,7 @@
                                                                                             </binding>
                                                                                         </connections>
                                                                                     </tableColumn>
-                                                                                    <tableColumn width="761" minWidth="40" maxWidth="1000" id="q5U-pC-TIW">
+                                                                                    <tableColumn identifier="" width="761" minWidth="40" maxWidth="1000" id="q5U-pC-TIW">
                                                                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Title">
                                                                                             <font key="font" metaFont="smallSystem"/>
                                                                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -953,7 +955,7 @@
                                                                         </subviews>
                                                                     </clipView>
                                                                     <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="aur-uN-L6R">
-                                                                        <rect key="frame" x="1" y="441" width="1008" height="16"/>
+                                                                        <rect key="frame" x="1" y="436" width="203" height="16"/>
                                                                         <autoresizingMask key="autoresizingMask"/>
                                                                     </scroller>
                                                                     <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="za5-XE-p4A">
@@ -1116,7 +1118,7 @@
                                     </constraints>
                                 </view>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1024" id="SpW-ic-L50"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="SpW-ic-L50"/>
                                 </constraints>
                                 <connections>
                                     <binding destination="EYB-7A-auC" name="hidden" keyPath="selectionIndexes" id="hjo-rI-3NB">
